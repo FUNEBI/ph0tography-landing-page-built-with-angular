@@ -1,0 +1,11 @@
+.works-img {
+    height: 30vw;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.works-img:hover {
+    transition: 0.4s ease-in-out;
+    width: 33vw;
+    overflow: hidden;
+}

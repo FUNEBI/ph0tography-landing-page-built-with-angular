@@ -1,0 +1,12 @@
+#clients-card {
+    background-image: url('/assets/images/background2.jpg');
+}
+
+.client-div {
+    opacity: 0.5;
+    background-color: white;
+}
+
+.clients-logo {
+    border-radius: 25px;
+}

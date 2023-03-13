@@ -1,0 +1,22 @@
+#services-card {
+    background-image: url('/assets/images/background3.jpg');
+}
+
+.services-header {
+    font-weight: bold;
+}
+
+.services-container {
+    background-color: white;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+
+.icon {
+    background-color: white;
+    color: rgb(202, 69, 202);
+}
+
+.icon h3 {
+    font-weight: bold;
+}

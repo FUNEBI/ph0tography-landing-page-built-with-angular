@@ -1,0 +1,63 @@
+<div class="container-fluid scroll-modal py-3" id="faqs-card">
+    <div class="modal-body px-4 my-5 mx-auto">
+        <div class="container text-left px-5 py-5">
+            <div class="row">
+                <div class="fv-row mb-7 col-lg-6 col-md-6 col-sm-12">
+                    <div class="row px-4">
+                        <h1>Frequently Asked Questions</h1>
+                        <div class="col-11">
+                            <p>Lorem ipsum dolor sit, amet consectetur</p>
+                        </div>
+                        <div class="col-1">
+                            <a class="text-decoration-none" (click)="enableEditMethod()" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <fa-icon class=" py-3 my-5" *ngIf="!enableEdit" [icon]="plusSign"></fa-icon>
+                                <fa-icon class=" py-3 my-5" *ngIf="enableEdit" [icon]="closeSign"></fa-icon>
+                            </a>
+
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="">
+                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+
+                        <div class="col-11">
+                            <p>Lorem ipsum dolor sit, amet consectetur</p>
+                        </div>
+                        <div class="col-1">
+                            <a class="text-decoration-none" (click)="enableEditMethod()" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                <fa-icon class=" py-3 my-5" *ngIf="!enableEdit" [icon]="plusSign"></fa-icon>
+                                <fa-icon class=" py-3 my-5" *ngIf="enableEdit" [icon]="closeSign"></fa-icon>
+                            </a>
+
+                        </div>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="">
+                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+
+                        <div class="col-11">
+                            <p>Lorem ipsum dolor sit, amet consectetur</p>
+                        </div>
+                        <div class="col-1">
+                            <a class="text-decoration-none" (click)="enableEditMethod()" data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                <fa-icon class=" py-3 my-5" *ngIf="!enableEdit" [icon]="plusSign"></fa-icon>
+                                <fa-icon class=" py-3 my-5" *ngIf="enableEdit" [icon]="closeSign"></fa-icon>
+                            </a>
+
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="">
+                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fv-row mb-7 col-lg-6 col-md-6 col-sm-12">
+                    <img src="/assets/images/mbr-4 (1).jpg" alt="an image of a lens" class="img-fluid faqs-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

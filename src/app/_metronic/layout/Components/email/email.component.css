@@ -1,0 +1,9 @@
+#email-card {
+    background-image: url('/assets/images/background7.jpg');
+}
+
+.email-container {
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 25px;
+}

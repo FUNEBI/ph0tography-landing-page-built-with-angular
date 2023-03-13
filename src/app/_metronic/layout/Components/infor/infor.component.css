@@ -1,0 +1,17 @@
+#infor-card {
+    background-image: url('/assets/images/background5.jpg');
+}
+
+.infor-area {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
+.infor-area h4 {
+    line-height: 1.5;
+}
+
+.infor-img {
+    border-radius: 25px;
+}

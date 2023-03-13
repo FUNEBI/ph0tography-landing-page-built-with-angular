@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'app/_metronic/layout/Components/footer/footer.component.css';
+@import 'app/_metronic/layout/Components/services/services.component.css';
+@import 'app/_metronic/layout/Components/progress-area/progress-area.component.css';
+@import 'app/_metronic/layout/Components/photographer/photographer.component.css';
+@import 'app/_metronic/layout/Components/cards/cards.component.css';
+@import 'app/_metronic/layout/Components/email/email.component.css';
+@import 'app/_metronic/layout/Components/forms/forms.component.css';
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background: linear-gradient(to right, rgb(235, 48, 235), rgb(241, 191, 52));
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+}

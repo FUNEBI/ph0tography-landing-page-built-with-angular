@@ -1,0 +1,15 @@
+#about-card {
+    background-image: url('/assets/images/background8.jpg');
+    background-repeat: no-repeat;
+}
+
+.about-text {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 25px;
+    line-height-step: 4em;
+}
+
+.camera-img {
+    border-radius: 25px;
+}

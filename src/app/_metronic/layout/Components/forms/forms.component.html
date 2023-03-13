@@ -1,0 +1,92 @@
+<div class="container-fluid scroll-modal py-3" id="form-card">
+    <div class="modal-body px-4 py-3 my-5 mx-auto">
+        <div class="container mx-auto text-center px-5 py-5 form-container">
+            <h4 class="py-3">Contact Us</h4>
+            <div class="modal-body py-3">
+                <form class="form w-100 py-3" [formGroup]="formGroup" novalidate="novalidate" id="form">
+                    <div>
+                        <div class="row">
+                            <div class="fv-row mb-7 my-4 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-lg form-control-solid" name="Name" placeholder="Name" formControlName="Name" [ngClass]="{
+                                        'is-invalid': formGroup.controls['Name'].invalid,
+                                        'is-valid': formGroup.controls['Name'].valid
+                                    }" />
+                                <ng-container [ngTemplateOutlet]="formError" [ngTemplateOutletContext]="{
+                                        validation: 'required',
+                                        message: ' Name is required',
+                                        control: formGroup.controls['Name']
+                                      }"></ng-container>
+                            </div>
+                            <div class="fv-row mb-7 my-4 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-lg form-control-solid" name="Email" placeholder="Email" formControlName="Email" [ngClass]="{
+                                        'is-invalid': formGroup.controls['Email'].invalid,
+                                        'is-valid': formGroup.controls['Email'].valid
+                                    }" />
+                                <ng-container [ngTemplateOutlet]="formError" [ngTemplateOutletContext]="{
+                                        validation: 'required',
+                                        message: ' Email is required',
+                                        control: formGroup.controls['Email']
+                                      }"></ng-container>
+                            </div>
+                            <div class="fv-row mb-7 my-4 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-lg form-control-solid" name="subject" placeholder="Subject" formControlName="subject" [ngClass]="{
+                                        'is-invalid': formGroup.controls['subject'].invalid,
+                                        'is-valid': formGroup.controls['subject'].valid
+                                    }" />
+                                <ng-container [ngTemplateOutlet]="formError" [ngTemplateOutletContext]="{
+                                        validation: 'required',
+                                        message: ' subject is required',
+                                        control: formGroup.controls['subject']
+                                      }"></ng-container>
+                            </div>
+                            <div class="fv-row mb-7 my-4 col-lg-6 col-md-6 col-sm-12">
+                                <input type="text" class="form-control form-control-lg form-control-solid" name="phone" placeholder="Phone" formControlName="phone" [ngClass]="{
+                                        'is-invalid': formGroup.controls['phone'].invalid,
+                                        'is-valid': formGroup.controls['phone'].valid
+                                    }" />
+                                <ng-container [ngTemplateOutlet]="formError" [ngTemplateOutletContext]="{
+                                        validation: 'required',
+                                        message: ' phone is required',
+                                        control: formGroup.controls['phone']
+                                      }"></ng-container>
+                            </div>
+                            <div class="fv-row mb-7 my-4 col-lg-12 col-md-12 col-sm-12">
+                                <textarea type="text" class="form-control form-control-lg form-control-solid" name="message" placeholder="Message" formControlName="message" [ngClass]="{
+                                        'is-invalid': formGroup.controls['message'].invalid,
+                                        'is-valid': formGroup.controls['message'].valid
+                                    }">
+                                    </textarea>
+                                <ng-container [ngTemplateOutlet]="formError" [ngTemplateOutletContext]="{
+                                        validation: 'required',
+                                        message: ' message is required',
+                                        control: formGroup.controls['message']
+                                      }"></ng-container>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary ml-5" [disabled]="!formGroup.valid" (click)="onSubmit()">
+                <span class="indicator-label ml-5">Save</span>
+                </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #formError let-control="control" let-message="message" let-validation="validation">
+    <ng-container *ngIf="control.hasError(validation) && (control.dirty || control.touched)">
+        <div class="fv-plugins-message-container">
+            <div class="fv-help-block">
+                <span role="alert">
+                    {{ message }}
+                </span>
+            </div>
+        </div>
+    </ng-container>
+</ng-template>
+
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" color="#fff" type="ball-scale-multiple" [fullScreen]="true">
+    <p style="color: white"></p>
+</ngx-spinner>

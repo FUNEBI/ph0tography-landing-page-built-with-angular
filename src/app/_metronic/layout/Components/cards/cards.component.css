@@ -1,0 +1,13 @@
+#cards-card {
+    background-image: url('/assets/images/background4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.payment-card {
+    opacity: 0.8;
+}
+
+.payment-card .card {
+    border-radius: 25px;
+}

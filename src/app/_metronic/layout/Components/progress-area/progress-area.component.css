@@ -1,0 +1,7 @@
+#progress-card {
+    background-image: url('/assets/images/background1.jpg');
+}
+
+.progress-bar {
+    background-color: rgb(158, 70, 158);
+}
